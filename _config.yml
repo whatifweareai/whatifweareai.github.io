@@ -5,8 +5,7 @@ author: "S Asok"
 description: "A memoir and an argument: what if we are not the programmers but the model?"
 lang: en
 
-# Project page: https://<user>.github.io/<repo>. Set baseurl to "/<repo>"
-# (or "" for a user site or custom domain) before publishing.
+# User/org site (repo whatifweareai.github.io) served at the root, so baseurl is empty.
 url: "https://whatifweareai.github.io"
 baseurl: "https://whatifweareai.github.io"
 
