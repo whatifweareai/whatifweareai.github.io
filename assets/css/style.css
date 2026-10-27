@@ -1,0 +1,40 @@
+:root { color-scheme: light dark; }
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  max-width: 42rem; margin: 0 auto; padding: 1.5rem 1.25rem 4rem;
+  line-height: 1.7; font-size: 1.125rem; color: #222; background: #fdfdfb;
+}
+@media (prefers-color-scheme: dark) {
+  body { color: #ddd; background: #1a1a1a; }
+  a { color: #8ab4f8; }
+  hr, nav.bottom, footer.site { border-color: #444; }
+}
+a { color: #1a56db; text-decoration: none; }
+a:hover { text-decoration: underline; }
+header.site { display: flex; gap: .75rem; align-items: baseline; margin-bottom: 2rem; font-size: .95rem; }
+header.site a { font-weight: bold; }
+header.site span { opacity: .6; }
+h1 { font-size: 1.7rem; line-height: 1.3; margin: 0 0 .5rem; }
+h2 { font-size: 1.3rem; margin-top: 2.2rem; }
+h3 { font-size: 1.1rem; }
+.part { opacity: .65; font-style: italic; margin: 0; }
+.cover { text-align: center; margin: 3rem 0; }
+.cover h1 { font-size: 3rem; }
+.cover .subtitle { font-size: 1.4rem; margin: 0; }
+.cover .byline { opacity: .7; }
+.toc li { margin-bottom: .35rem; }
+article img { max-width: 100%; height: auto; display: block; margin: 1.5rem auto; }
+blockquote { margin: 1.25rem 0; padding-left: 1rem; border-left: 3px solid #bbb; opacity: .9; }
+hr { border: none; border-top: 1px solid #ccc; margin: 2rem 0; }
+table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+th, td { border: 1px solid #ccc; padding: .35rem .6rem; text-align: left; }
+nav.top { font-size: .95rem; margin-bottom: 1.5rem; }
+nav.bottom { display: flex; justify-content: space-between; gap: 1rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #ccc; font-size: .95rem; }
+footer.site { margin-top: 4rem; padding-top: 1rem; border-top: 1px solid #ccc; font-size: .85rem; opacity: .7; }
+
+.hero { display: flex; gap: 2rem; align-items: center; flex-wrap: wrap; margin: 1rem 0 2.5rem; }
+.hero .cover-img { width: 14rem; max-width: 100%; height: auto; box-shadow: 0 6px 24px rgba(0,0,0,.3); }
+.hero h1 { font-size: 3rem; }
+.hero .subtitle { font-size: 1.4rem; margin: 0; }
+.hero .byline { opacity: .7; }
+.badge { display: inline-block; padding: .25rem .8rem; border: 1px solid currentColor; border-radius: 999px; font-size: .85rem; }

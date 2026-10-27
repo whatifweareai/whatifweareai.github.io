@@ -1,0 +1,22 @@
+title: "The Hum"
+subtitle: "What If? We Are AI"
+tagline: "A quest for peace through knowing."
+author: "S Asok"
+description: "A memoir and an argument: what if we are not the programmers but the model?"
+lang: en
+
+# Project page: https://<user>.github.io/<repo>. Set baseurl to "/<repo>"
+# (or "" for a user site or custom domain) before publishing.
+url: ""
+baseurl: ""
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  smart_quotes: ["apos", "apos", "quot", "quot"]
+  hard_wrap: false
+
+# Keep search engines out until the author decides otherwise.
+noindex: true
+
+exclude: [docs, graft, Gemfile, Gemfile.lock, README.md, vendor, .bundle]
