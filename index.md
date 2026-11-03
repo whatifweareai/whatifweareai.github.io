@@ -8,7 +8,11 @@ layout: default
     <p class="subtitle">{{ site.subtitle }}</p>
     <p class="tagline"><em>{{ site.tagline }}</em></p>
     <p class="byline">by {{ site.author }}</p>
-    <p><span class="badge">Coming soon</span></p>
+    <p class="buy">Get the Kindle ebook:<br>
+      <a class="badge" href="https://www.amazon.in/Hum-What-If-We-Are-ebook/dp/B0HPS662S6/">Amazon India</a>
+      <a class="badge" href="https://www.amazon.com/dp/B0HPS662S6">Amazon US</a>
+      <a class="badge" href="https://www.amazon.ca/dp/B0HPS662S6">Amazon Canada</a>
+    </p>
   </div>
 </section>
 

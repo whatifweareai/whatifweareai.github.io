@@ -14,4 +14,4 @@ bundle exec jekyll serve
 1. The repo is `whatifweareai.github.io`, so the site is served at the root: https://whatifweareai.github.io/ (`baseurl` stays empty).
 2. Repo settings > Pages > Source: GitHub Actions. Pushing to `main` deploys.
 3. `noindex: true` in `_config.yml` keeps search engines out. Set it to `false` to be listed.
-4. Replace the "Coming soon" badge in `index.md` with buy links once the book is live.
+4. The buy links for Amazon India, US and Canada are in the hero section of `index.md`.

@@ -38,3 +38,5 @@ footer.site { margin-top: 4rem; padding-top: 1rem; border-top: 1px solid #ccc; f
 .hero .subtitle { font-size: 1.4rem; margin: 0; }
 .hero .byline { opacity: .7; }
 .badge { display: inline-block; padding: .25rem .8rem; border: 1px solid currentColor; border-radius: 999px; font-size: .85rem; }
+.buy { line-height: 2.4; }
+.buy .badge { margin-right: .35rem; white-space: nowrap; }
