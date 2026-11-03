@@ -2,16 +2,19 @@
 layout: default
 ---
 <section class="hero">
-  <img class="cover-img" src="{{ '/assets/img/cover.jpg' | relative_url }}" alt="Cover of {{ site.title }}: {{ site.subtitle }}">
-  <div>
+  <div class="hero-text">
     <h1>{{ site.title }}</h1>
     <p class="subtitle">{{ site.subtitle }}</p>
     <p class="tagline"><em>{{ site.tagline }}</em></p>
     <p class="byline">by {{ site.author }}</p>
-    <p class="buy">Get the Kindle ebook:<br>
-      {% for link in site.buy_links %}<a class="badge" href="{{ link.url }}">{{ link.label }}</a>
+    <p class="buy"><span>Get the Kindle ebook:</span>
+      {% for link in site.buy_links %}<a class="store" href="{{ link.url }}">{{ link.label }}</a>
       {% endfor %}
     </p>
+  </div>
+  <div class="book">
+    <span class="hum" aria-hidden="true"></span>
+    <img src="{{ '/assets/img/cover.jpg' | relative_url }}" width="562" height="900" fetchpriority="high" alt="Cover of {{ site.title }}: {{ site.subtitle }}">
   </div>
 </section>
 

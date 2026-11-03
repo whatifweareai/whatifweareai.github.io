@@ -31,13 +31,11 @@
   "sameAs": {{ site.buy_links | map: "url" | jsonify }}
 }
 </script>
+<meta name="theme-color" content="#0D1B36">
+<link rel="preload" href="{{ '/assets/fonts/literata.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
-<header class="site">
-  <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
-  <span>{{ site.subtitle }}</span>
-</header>
 <main>
 {{ content }}
 </main>
