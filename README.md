@@ -1,6 +1,6 @@
 # The Hum: What If? We Are AI (launch page)
 
-Jekyll launch page for the book. No book text is published here: only the title, tagline, description and cover.
+Jekyll launch page for the book. Book text on the site is limited to six short passages in `inside.html`, about 1% of the book, taken word for word from the published chapters.
 
 ## Preview
 

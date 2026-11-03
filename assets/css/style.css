@@ -136,6 +136,34 @@ footer.site {
 }
 footer.site p { margin: 0; }
 
+.inside-link { margin: 1.25rem 0 0; }
+
+/* The contents and passages page. */
+.back { padding-block-start: 2rem; font-size: 1rem; }
+.page-title { margin-block-start: 2.5rem; font-size: clamp(2.25rem, 6vw, 4.5rem); white-space: normal; font-family: "Literata", Georgia, serif; font-weight: 400; }
+.band { position: relative; height: 7.5rem; margin-block: 1rem 2.5rem; }
+.band .hum { top: 50%; }
+main h2 { margin: 0 0 1rem; font: 400 1.9rem/1.25 "Literata", Georgia, serif; color: var(--ice); }
+main h3 { margin: 0 0 .5rem; font: italic 400 1.125rem/1.5 "Literata", Georgia, serif; color: var(--mist); }
+.contents > p { max-width: 36rem; margin: 0 0 2rem; color: var(--mist); }
+.parts { columns: 2 20rem; column-gap: 3rem; }
+.parts section { break-inside: avoid; margin-bottom: 2rem; }
+.parts ol { margin: 0; padding-left: 2.1rem; }
+.parts li { padding-left: .25rem; line-height: 1.5; margin-bottom: .35rem; }
+.parts li::marker { color: var(--mist); font-size: .9em; }
+.samples { margin-top: 4rem; }
+.samples article { max-width: 36rem; margin-bottom: 4rem; scroll-margin-top: 1.5rem; }
+.samples article p { margin: 0 0 1.1em; }
+.samples .gap { margin: 0 0 1.1em; color: var(--mist); }
+.keep-reading { max-width: 36rem; }
+.keep-reading .buy { margin-top: 0; }
+
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body::before { display: none; }
+  h2, h3 { break-after: avoid; }
+}
+
 @media (max-width: 46rem) {
   .hero { grid-template-columns: minmax(0, 1fr); }
   .book { order: -1; justify-self: center; width: min(62vw, 16rem); }

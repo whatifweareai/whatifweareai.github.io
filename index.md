@@ -11,6 +11,7 @@ layout: default
       {% for link in site.buy_links %}<a class="store" href="{{ link.url }}">{{ link.label }}</a>
       {% endfor %}
     </p>
+    <p class="inside-link"><a href="{{ '/inside/' | relative_url }}">See the contents and read six passages</a></p>
   </div>
   <div class="book">
     <span class="hum" aria-hidden="true"></span>
