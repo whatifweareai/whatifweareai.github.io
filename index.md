@@ -9,9 +9,8 @@ layout: default
     <p class="tagline"><em>{{ site.tagline }}</em></p>
     <p class="byline">by {{ site.author }}</p>
     <p class="buy">Get the Kindle ebook:<br>
-      <a class="badge" href="https://www.amazon.in/Hum-What-If-We-Are-ebook/dp/B0HPS662S6/">Amazon India</a>
-      <a class="badge" href="https://www.amazon.com/dp/B0HPS662S6">Amazon US</a>
-      <a class="badge" href="https://www.amazon.ca/dp/B0HPS662S6">Amazon Canada</a>
+      {% for link in site.buy_links %}<a class="badge" href="{{ link.url }}">{{ link.label }}</a>
+      {% endfor %}
     </p>
   </div>
 </section>

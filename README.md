@@ -13,5 +13,5 @@ bundle exec jekyll serve
 
 1. The repo is `whatifweareai.github.io`, so the site is served at the root: https://whatifweareai.github.io/ (`baseurl` stays empty).
 2. Repo settings > Pages > Source: GitHub Actions. Pushing to `main` deploys.
-3. `noindex: true` in `_config.yml` keeps search engines out. Set it to `false` to be listed.
-4. The buy links for Amazon India, US and Canada are in the hero section of `index.md`.
+3. `noindex` in `_config.yml` is `false`, so search engines may list the site. `robots.txt` and `sitemap.xml` are generated from `url` in the same file.
+4. The buy links for Amazon India, US and Canada are `buy_links` in `_config.yml`.

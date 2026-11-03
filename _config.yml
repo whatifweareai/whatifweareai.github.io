@@ -2,12 +2,20 @@ title: "The Hum"
 subtitle: "What If? We Are AI"
 tagline: "A quest for peace through knowing."
 author: "S Asok"
-description: "A memoir and an argument: what if we are not the programmers but the model?"
+description: "A memoir and an argument: what if we are not the programmers but the model? The Hum is a Kindle ebook by S Asok, on Amazon India, US and Canada."
+asin: "B0HPS662S6"
+buy_links:
+  - label: "Amazon India"
+    url: "https://www.amazon.in/Hum-What-If-We-Are-ebook/dp/B0HPS662S6/"
+  - label: "Amazon US"
+    url: "https://www.amazon.com/dp/B0HPS662S6"
+  - label: "Amazon Canada"
+    url: "https://www.amazon.ca/dp/B0HPS662S6"
 lang: en
 
 # User/org site (repo whatifweareai.github.io) served at the root, so baseurl is empty.
 url: "https://whatifweareai.github.io"
-baseurl: "https://whatifweareai.github.io"
+baseurl: ""
 
 markdown: kramdown
 kramdown:
@@ -15,7 +23,7 @@ kramdown:
   smart_quotes: ["apos", "apos", "quot", "quot"]
   hard_wrap: false
 
-# Keep search engines out until the author decides otherwise.
-noindex: true
+# false lets search engines list the site. true adds a noindex tag and blocks crawling in robots.txt.
+noindex: false
 
 exclude: [docs, graft, Gemfile, Gemfile.lock, README.md, vendor, .bundle]
