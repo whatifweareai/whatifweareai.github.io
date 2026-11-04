@@ -20,7 +20,6 @@ html { background: var(--deep); }
 body {
   position: relative;
   margin: 0;
-  overflow-x: clip;
   font: 400 1.125rem/1.75 "Literata", Georgia, serif;
   color: var(--paper);
   background:
@@ -40,6 +39,10 @@ body::before {
   opacity: .65;
   pointer-events: none;
 }
+
+/* The wave is wider than the screen. Clipping here, not on body, is what stops
+   phone browsers zooming out: overflow set on body passes to the viewport. */
+.page { position: relative; overflow-x: hidden; overflow-x: clip; }
 
 main, footer.site {
   position: relative;
@@ -95,7 +98,7 @@ h1 {
 .store:hover { color: var(--deep); background: #F8C48C; }
 
 /* The waveform leaves the cover at the height of the cover's own waveform. */
-.book { position: relative; width: clamp(15rem, 27vw, 21rem); }
+.book { position: relative; width: 22rem; }
 .book img {
   position: relative;
   display: block;
@@ -164,8 +167,26 @@ main h3 { margin: 0 0 .5rem; font: italic 400 1.125rem/1.5 "Literata", Georgia, 
   h2, h3 { break-after: avoid; }
 }
 
-@media (max-width: 46rem) {
-  .hero { grid-template-columns: minmax(0, 1fr); }
+/* Stack below 60rem. Side by side, a narrower cover would lift the wave into the buttons. */
+@media (max-width: 60rem) {
+  .hero { grid-template-columns: minmax(0, 1fr); gap: 3.5rem; padding-block-start: 2.5rem; padding-block-end: 3.5rem; }
   .book { order: -1; justify-self: center; width: min(62vw, 16rem); }
-  .hero { gap: 3.5rem; padding-block-start: 2.5rem; padding-block-end: 3.5rem; }
+  /* The cover is centred here, so the wave only has to span the screen. */
+  .book .hum { width: 100vw; }
+}
+
+/* Landscape phones: keep the cover from filling the short screen. */
+@media (max-width: 60rem) and (max-height: 30rem) {
+  .book { width: min(40vw, 11rem); }
+}
+
+@media (max-width: 46rem) {
+  .tagline { margin-top: 1.75rem; }
+  .buy { margin-top: 2rem; }
+  main > .hero + p { font-size: 1.3rem; }
+  main h2 { font-size: 1.6rem; }
+}
+
+@media (max-width: 30rem) {
+  .store { flex: 1 1 auto; padding-block: .625rem; text-align: center; }
 }
