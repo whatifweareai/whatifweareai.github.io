@@ -13,8 +13,8 @@ buy_links:
     url: "https://www.amazon.ca/dp/B0HPS662S6"
 lang: en
 
-# User/org site (repo whatifweareai.github.io) served at the root, so baseurl is empty.
-url: "https://whatifweareai.github.io"
+# Served at the root of the custom domain, so baseurl is empty.
+url: "https://whatifweareai.com"
 baseurl: ""
 
 markdown: kramdown

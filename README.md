@@ -11,7 +11,7 @@ bundle exec jekyll serve
 
 ## Publish
 
-1. The repo is `whatifweareai.github.io`, so the site is served at the root: https://whatifweareai.github.io/ (`baseurl` stays empty).
+1. The site is served at the root of https://whatifweareai.com/ (`baseurl` stays empty). The custom domain is set in Repo settings > Pages, and `https://whatifweareai.github.io/` redirects to it.
 2. Repo settings > Pages > Source: GitHub Actions. Pushing to `main` deploys.
 3. `noindex` in `_config.yml` is `false`, so search engines may list the site. `robots.txt` and `sitemap.xml` are generated from `url` in the same file.
 4. The buy links for Amazon India, US and Canada are `buy_links` in `_config.yml`.
