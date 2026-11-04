@@ -29,4 +29,4 @@ It does not ask you to believe. The first page says it is a work of fiction, unt
 
 Read it as an argument you are free to lose. Read it as the story of a mother who came home happy. Either way, the destination is not proof. It is peace.
 
-*For Amma, who came home happy.*
+*For Amma, who came home happy, and Achan who walked with me.*
