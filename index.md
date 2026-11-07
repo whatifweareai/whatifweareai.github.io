@@ -7,7 +7,7 @@ layout: default
     <p class="subtitle">{{ site.subtitle }}</p>
     <p class="tagline"><em>{{ site.tagline }}</em></p>
     <p class="byline">by {{ site.author }}</p>
-    <p class="buy"><span>Get the Kindle ebook:</span>
+    <p class="buy"><span>Get the Kindle ebook ({{ site.price_note }}):</span>
       {% for link in site.buy_links %}<a class="store" href="{{ link.url }}">{{ link.label }}</a>
       {% endfor %}
     </p>

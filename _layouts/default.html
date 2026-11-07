@@ -28,6 +28,9 @@
   "bookFormat": "https://schema.org/EBook",
   "inLanguage": {{ site.lang | jsonify }},
   "identifier": { "@type": "PropertyValue", "propertyID": "ASIN", "value": {{ site.asin | jsonify }} },
+{% assign priced = site.buy_links | where_exp: "l", "l.price" %}  "offers": [{% for l in priced %}
+    { "@type": "Offer", "price": {{ l.price | jsonify }}, "priceCurrency": {{ l.currency | jsonify }}, "url": {{ l.url | jsonify }}, "availability": "https://schema.org/InStock" }{% unless forloop.last %},{% endunless %}{% endfor %}
+  ],
   "sameAs": {{ site.buy_links | map: "url" | jsonify }}
 }
 </script>
