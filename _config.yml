@@ -4,11 +4,17 @@ tagline: "A quest for peace through knowing."
 author: "S Asok"
 description: "A memoir and an argument: what if we are not the programmers but the model? The Hum is a Kindle ebook by S Asok, on Amazon India, US and Canada."
 asin: "B0HPS662S6"
+# Shown on the site and in the book data. Change here when the Amazon price changes.
+price_note: "US$2.99 or ₹285"
 buy_links:
   - label: "Amazon India"
     url: "https://www.amazon.in/Hum-What-If-We-Are-ebook/dp/B0HPS662S6/"
+    price: "285"
+    currency: "INR"
   - label: "Amazon US"
     url: "https://www.amazon.com/dp/B0HPS662S6"
+    price: "2.99"
+    currency: "USD"
   - label: "Amazon Canada"
     url: "https://www.amazon.ca/dp/B0HPS662S6"
 lang: en
