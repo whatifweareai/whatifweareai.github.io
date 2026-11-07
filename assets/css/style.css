@@ -190,3 +190,32 @@ main h3 { margin: 0 0 .5rem; font: italic 400 1.125rem/1.5 "Literata", Georgia, 
 @media (max-width: 30rem) {
   .store { flex: 1 1 auto; padding-block: .625rem; text-align: center; }
 }
+
+/* Email signup (posts to Buttondown; no scripts). */
+.subscribe { max-width: 36rem; margin: 3rem 0 0; }
+.subscribe h2 { margin-bottom: .5rem; }
+.subscribe p { margin: 0 0 1rem; color: var(--mist); }
+.subscribe label { display: block; margin-bottom: .4rem; color: var(--ice); }
+.subscribe-row { display: flex; flex-wrap: wrap; gap: .6rem; }
+.subscribe input[type="email"] {
+  flex: 1 1 14rem;
+  padding: .5rem .75rem;
+  border: 1px solid var(--mist);
+  border-radius: 3px;
+  font: inherit;
+  color: var(--paper);
+  background: var(--deep);
+}
+.subscribe input[type="email"]:focus-visible { outline: 2px solid var(--ember); outline-offset: 2px; }
+.subscribe input[type="submit"] {
+  padding: .5rem 1rem;
+  border: 0;
+  border-radius: 3px;
+  font: inherit;
+  cursor: pointer;
+  color: var(--deep);
+  background: var(--ember);
+}
+.subscribe input[type="submit"]:hover { background: #F8C48C; }
+.subscribe .credit { margin: .75rem 0 0; font-size: .85rem; }
+.subscribe .credit a { color: var(--mist); }

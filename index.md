@@ -29,4 +29,17 @@ It does not ask you to believe. The first page says it is a work of fiction, unt
 
 Read it as an argument you are free to lose. Read it as the story of a mother who came home happy. Either way, the destination is not proof. It is peace.
 
+<section class="subscribe" aria-labelledby="subscribe-heading">
+<h2 id="subscribe-heading">Notes from the author</h2>
+<p>Occasional updates about the book. No spam, and you can unsubscribe at any time.</p>
+<form action="https://buttondown.com/api/emails/embed-subscribe/whatifweareai" method="post" target="_blank">
+<label for="subscribe-email">Your email address</label>
+<div class="subscribe-row">
+<input type="email" name="email" id="subscribe-email" required autocomplete="email">
+<input type="submit" value="Subscribe">
+</div>
+</form>
+<p class="credit"><a href="https://buttondown.com/refer/whatifweareai">Powered by Buttondown</a></p>
+</section>
+
 *For Amma, who came home happy, and Achan who walked with me.*
