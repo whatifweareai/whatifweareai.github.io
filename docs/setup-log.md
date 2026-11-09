@@ -2,6 +2,22 @@
 
 Newest entry first. No secrets here: names and IDs only.
 
+## 2026-11-10: Umami Cloud replaces Google Analytics
+
+**Why:** Umami sets no cookies and stores no personal data, so no consent banner is needed. Google Analytics 4 needed one for EU/UK (and arguably Canadian) visitors.
+
+**Created, in Umami Cloud, by the site owner:**
+- Account on the free Hobby plan (100k events a month, 1 website, 6 months of data), data region US. Signed up with the book's Gmail account (address kept in the private accounts file, not in this repo).
+- Website: `whatifweareai.com` (domain `whatifweareai.com`), website ID `25e958a2-6058-447c-b336-c760feccd8a7` (public, it is in the page source).
+
+**Wired into the site:** `umami_id` in `_config.yml`, rendered by `_includes/analytics.html` (production builds only). The `ga4_id` setting and the GA4 snippet were removed.
+
+**Google Analytics:** the property `The Hum website` (measurement ID `G-6HVCT6L5DB`) still exists in the GA console but receives no data now. Delete it in GA Admin when no longer wanted.
+
+**Undo:** set `umami_id: ""` to stop tracking; delete the website in Umami to remove its data.
+
+**Still open:** the free plan keeps 6 months of data; export before then if older data matters.
+
 ## 2026-11-10: Google Analytics 4 for whatifweareai.com
 
 **Why:** to see how much traffic the book's launch page gets.
