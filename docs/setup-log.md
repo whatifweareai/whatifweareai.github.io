@@ -16,7 +16,7 @@ Newest entry first. No secrets here: names and IDs only.
 
 **Wired into the site:** `ga4_id` in `_config.yml`, rendered by `_includes/analytics.html`, only in production builds.
 
-**Checked:** nothing yet. After deploy, open the Realtime report in GA and visit the site yourself.
+**Checked (2026-11-10):** after deploy, `G-6HVCT6L5DB` is in the served HTML of the home page and `/inside/`. A visit from Chrome showed as 1 active user (India) in GA Home. Full reports can take up to 48 hours. More detail: `wiki/analytics/` in the book-meta repo.
 
 **Undo:** set `ga4_id: ""` in `_config.yml` to stop tracking; delete the property in GA Admin to remove the data.
 
