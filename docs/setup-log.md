@@ -28,7 +28,7 @@ Newest entry first. No secrets here: names and IDs only.
 - Web data stream: `whatifweareai.com` (`https://whatifweareai.com`), stream ID `16306476225`, Enhanced measurement on (page views, scrolls, outbound clicks and more)
 - Measurement ID: `G-6HVCT6L5DB` (not secret, it is visible in the page source)
 
-**Identity:** created while signed in to the site owner's Google account (the address is not recorded in this repo). Account data-sharing boxes were left at Google's defaults (modeling contributions, technical support and recommendations on; Google products & services off).
+**Identity:** created while signed in to the book's Gmail account (the address is kept in the private accounts file, not in this repo). Account data-sharing boxes were left at Google's defaults (modeling contributions, technical support and recommendations on; Google products & services off).
 
 **Wired into the site:** `ga4_id` in `_config.yml`, rendered by `_includes/analytics.html`, only in production builds.
 
