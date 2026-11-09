@@ -29,6 +29,9 @@ kramdown:
   smart_quotes: ["apos", "apos", "quot", "quot"]
   hard_wrap: false
 
+# Google Analytics 4 measurement ID (looks like G-XXXXXXXXXX). Leave empty to turn tracking off.
+ga4_id: "G-6HVCT6L5DB"
+
 # false lets search engines list the site. true adds a noindex tag and blocks crawling in robots.txt.
 noindex: false
 
