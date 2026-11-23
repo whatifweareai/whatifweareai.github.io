@@ -15,13 +15,14 @@
 <meta property="og:image" content="{{ '/assets/img/cover.jpg' | absolute_url }}">
 <meta property="og:image:alt" content="Cover of {{ site.title }}: {{ site.subtitle }}">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@whatifweareai">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Book",
   "name": {{ site.title | append: ": " | append: site.subtitle | jsonify }},
   "alternateName": {{ site.title | jsonify }},
-  "author": { "@type": "Person", "name": {{ site.author | jsonify }} },
+  "author": { "@type": "Person", "name": {{ site.author | jsonify }}, "sameAs": {{ site.social_links | map: "url" | jsonify }} },
   "description": {{ site.description | jsonify }},
   "image": {{ '/assets/img/cover.jpg' | absolute_url | jsonify }},
   "url": {{ '/' | absolute_url | jsonify }},
@@ -45,6 +46,7 @@
 {{ content }}
 </main>
 <footer class="site">
+  <p class="follow">Follow {{ site.author }}:{% for link in site.social_links %} <a href="{{ link.url }}" rel="me noopener">{{ link.label }}</a>{% endfor %}</p>
   <p>This is a work of fiction, until science proves it to be the truth.</p>
   <p>&copy; 2026 {{ site.author }}. All rights reserved.</p>
 </footer>

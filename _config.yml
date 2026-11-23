@@ -17,6 +17,10 @@ buy_links:
     currency: "USD"
   - label: "Amazon Canada"
     url: "https://www.amazon.ca/dp/B0HPS662S6"
+# Where to follow the author. Shown in the footer of every page and in the book data.
+social_links:
+  - label: "X (@whatifweareai)"
+    url: "https://x.com/whatifweareai"
 lang: en
 
 # Served at the root of the custom domain, so baseurl is empty.

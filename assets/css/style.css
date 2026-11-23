@@ -138,6 +138,7 @@ footer.site {
   color: var(--mist);
 }
 footer.site p { margin: 0; }
+footer.site p.follow { margin-bottom: .6rem; }
 
 .inside-link { margin: 1.25rem 0 0; }
 
